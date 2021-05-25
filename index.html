@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--解释文档类型(HTML5)-->
+<html lang="en">
+<!--当前页面显示language为English-->
+<!--zh-CN定义语言为中文-->
+
+<head>
+    <meta charset="UTF-8">
+    <!--定义字符集-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style/StyleSheet.css" rel="stylesheet" />
+    <!--链接到css文件-->>
+    <title>Bottle Box</title>
+</head>
+
+<body>
+    <div class="sign">
+        <a id="register" href="register.html" target="_blank">注册</a>
+        <a id="login" href="login.html" target="_blank">登录</a>
+        <!--新窗口打开-->
+    </div>
+    
+    <div class="header"><!--div自己占一行-->
+    <!--块级元素，宽度默认是父级容器的100%-->
+        <h1 id="index" align="right">Bottle Box</h1>
+        <h2 style="font-family:verdana; text-align:right">校园瓶子回收机</h2>       
+    </div>
+
+    <style>
+        .header{
+            background-image: url("images/logo_bian.png");
+            background-repeat: no-repeat;
+        }
+    </style>
+
+    <table>
+        <thead>
+            <tr>
+                <th>瓶子种类 </th>
+                <th> 可获积分</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>塑料瓶</td>
+                <td>2积分</td>
+            </tr>
+            <tr>
+                <td>玻璃瓶</td>
+                <td>2积分</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <span class="credit"><!--一行可以放多个span-->
+    <!--行内元素，高度宽度不能直接设置，宽度默认为内容的宽度--> 
+        <!--<a href="跳转目标" target="目标窗口的弹出方式">文本或图像</a>-->
+        <a href="credit store.html" target="_blank">
+            <strong>积分商城</strong>
+        </a>
+        <!--可以把积分商城这几个字做成图片-->        
+    </span>
+    <span class="feedback">
+        <a href="feedback.html" target="_blank">
+            <strong>错误反馈</strong>
+        </a>
+        <!--_blank 新窗口打开-->
+        <!--_self 当前窗口打开（默认）-->        
+    </span>
+</body>
+
+</html>
