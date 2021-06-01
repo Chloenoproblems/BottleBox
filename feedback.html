@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style/StyleSheet.css" rel="stylesheet" />
+    <!--链接到css文件-->>
+    <title>Error feedback</title>
+</head>
+
+<body>
+    <h1 style = "color: antiquewhite" align="center"> Hello!  <i>(username)</i></h1> <br>
+    <h2 style="font-family:verdana; color: antiquewhite" align="center">Error feedback</h2>
+    <!--<form>标签用于定义表单域，以实现用户信息的收集和传递
+    <form>会把它范围内的表单元素提交给服务器-->
+        <form action="demo.php" method="POST" name="post">
+            <!--<form action="url地址" method="提交方式" name="表单域名称">-->
+            <!--text 文本框 用户可以在里面输入任何文字-->
+            <table width="500"> 
+                <tr> </tr>
+                <tr> </tr>
+                <tr>                   
+                    <td>
+                        <textarea name="feedback" cols="40" rows="4" style="OVERFLOW: hidden"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Submit"></td>
+                </tr>
+            </table>          
+        </form>
+
+    
+</body>
+
+</html>
